@@ -11,10 +11,10 @@ To setup a project for the lane detection or FIR filter, please follow these ste
 5. add the corresponding VHDL files to your project
 6. add the Arty-Z7-20-Master_RL.xdc from this repository (root) to your constraints
 7. go to the tcl console in Vivado, go into the "FPGA-Vision-for-Arty-Z7-main" directory with *cd "x:/your_path/FPGA-Vision-for-Arty-Z7-main"* and execute
-   * source ../scripts/ip/clk_wiz_0.tcl
-   * source ../scripts/ip/dvi2rgb_0.tcl
-   * source ../scripts/ip/rgb2dvi_0.tcl
+   * *source ../scripts/ip/clk_wiz_0.tcl*
+   * *source ../scripts/ip/dvi2rgb_0.tcl*
+   * *source ../scripts/ip/rgb2dvi_0.tcl*
   
-   * and for the lane detection you need to execute ../scripts/ip/blk_mem_gen_0.tcl as well
+   * and for the lane detection you need to execute *source ../scripts/ip/blk_mem_gen_0.tcl* as well
 8. check, if all dependencies are resolved and run synthesis, implementation and generate bitfile. You will find you bitstream under "X:\your_project_directory\lane\lane.runs\impl_1\FPGA_Vision_arty_z7.bit"
 9. go to https://fpga-vision-test-lab.h-brs.de/, register or, if already registered, sign in and access the video experiment from the Arty Z7 lab, upload your bitfile and test it with real hardware!
